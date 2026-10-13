@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Karlita cumple 32 y te invita a su fiesta tropical. Sábado 17 de octubre, 20:00.">
+<meta name="description" content="Karlita cumple 32 y te invita a su noche de karaoke tropical. Sábado 17 de octubre, 20:00.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cumple de Karlita">
-<meta property="og:title" content="Karlita cumple 32 🌺 Fiesta tropical">
-<meta property="og:description" content="Sábado 17 de octubre, 20:00. Toca para abrir tu invitación y confirmar tu asistencia.">
+<meta property="og:title" content="Karlita cumple 32 🎤 Karaoke tropical">
+<meta property="og:description" content="Sábado 17 de octubre, 20:00. Toca para abrir tu invitación, elegir tu canción y confirmar.">
 <meta property="og:url" content="https://ronaldcachi91.github.io/cumple-karlita/">
 <meta property="og:image" content="https://ronaldcachi91.github.io/cumple-karlita/preview.jpg">
 <meta property="og:image:secure_url" content="https://ronaldcachi91.github.io/cumple-karlita/preview.jpg">
@@ -83,6 +83,11 @@ body{
 
 
 /* ---------- Dress code ---------- */
+.karaoke{width:100%;text-align:center;display:grid;gap:10px;justify-items:center;background:rgba(90,46,22,.38);border:1.5px solid rgba(251,235,203,.35);border-radius:22px;padding:22px 18px}
+.karaoke .mic{width:58px;height:58px;animation:flota 3s ease-in-out infinite}
+.karaoke h2{font-family:var(--script);font-weight:400;font-size:2.4rem;margin:0;color:var(--sol);line-height:1}
+.karaoke p{margin:0;max-width:34ch}
+.karaoke .btn{width:100%}
 .dress{text-align:center;display:grid;gap:6px;max-width:34ch}
 .dress h2{font-family:var(--script);font-weight:400;font-size:2.4rem;margin:0;color:var(--sol);line-height:1}
 .dress p{margin:0;font-size:1.02rem}
@@ -169,8 +174,8 @@ canvas#petalos{position:fixed;inset:0;width:100%;height:100%;pointer-events:none
 <svg class="palma der" viewBox="0 0 100 160" aria-hidden="true"><path d="M48 160 C50 120 52 90 56 60 L60 60 C57 90 55 120 54 160Z"/><path d="M58 58 C40 40 15 42 2 54 C20 40 40 44 58 58Z"/><path d="M58 58 C50 30 30 14 10 14 C32 20 48 34 58 58Z"/><path d="M58 58 C64 30 82 14 98 18 C80 24 66 36 58 58Z"/><path d="M58 58 C78 44 96 50 100 64 C88 52 74 52 58 58Z"/></svg>
 
 <main class="wrap">
-  <div class="eyebrow">Modo tropical: ON</div>
-  <p class="lead">Te invito a celebrar mi cumpleaños</p>
+  <div class="eyebrow">Karaoke tropical</div>
+  <p class="lead">Te invito a cantar y celebrar mi cumpleaños</p>
 
   <div class="arch">
     <div class="frame"><img src="foto.jpg" alt="Karlita sonriendo, lista para su cumpleaños"></div>
@@ -184,7 +189,7 @@ canvas#petalos{position:fixed;inset:0;width:100%;height:100%;pointer-events:none
   </div>
 
   <h1 class="nombre">Karlita</h1>
-  <div class="edad"><span>cumple</span><b>32</b><span>con brisa de playa<br>y moño puesto</span></div>
+  <div class="edad"><span>cumple</span><b>32</b><span>y quiere oírte<br>cantar a todo pulmón</span></div>
 
   <img class="fiesta" src="fiesta.jpg" alt="Caricatura de Karlita brindando junto a su pastel de 32 años">
   <div class="tarjeta">
@@ -203,9 +208,23 @@ canvas#petalos{position:fixed;inset:0;width:100%;height:100%;pointer-events:none
     </div>
   </div>
 
+  <section class="karaoke">
+    <svg class="mic" viewBox="0 0 64 64" aria-hidden="true"><rect x="22" y="6" width="20" height="32" rx="10" fill="var(--crema)"/><path d="M22 18h20M22 24h20M22 30h20" stroke="var(--terracota)" stroke-width="2" opacity=".5"/><path d="M14 30a18 18 0 0 0 36 0" fill="none" stroke="var(--sol)" stroke-width="4" stroke-linecap="round"/><path d="M32 48v10M22 58h20" stroke="var(--sol)" stroke-width="4" stroke-linecap="round"/></svg>
+    <h2>Noche de karaoke</h2>
+    <p>Ve calentando la voz: habrá micrófono, pantalla y canciones para todos. Busca tu canción en el catálogo y mándamela para ponerla en la lista.</p>
+    <a class="btn sec" target="_blank" rel="noopener" href="https://ecuakaraoke.com.ec/pistas/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      Ver catálogo de canciones
+    </a>
+    <a class="btn sec" target="_blank" rel="noopener" href="https://wa.me/593981173271?text=%C2%A1Hola!%20Para%20el%20karaoke%20de%20Karlita%20quiero%20cantar%3A%20">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      Pedir mi canción
+    </a>
+  </section>
+
   <section class="dress">
     <h2>Dress code</h2>
-    <p>Outfit tropical: flores, naranjas, rojos y amarillos. Si llegas con flor en el cabello o con moño, sumas puntos.</p>
+    <p>Outfit tropical listo para el escenario: flores, naranjas, rojos y amarillos. Si llegas con flor en el cabello, sumas puntos.</p>
     <div class="paleta" aria-label="Colores sugeridos">
       <i style="background:#C84B1F"></i><i style="background:#F4C04A"></i><i style="background:#B8162F"></i><i style="background:#F5A3B5"></i><i style="background:#FBEBCB"></i>
     </div>
@@ -221,14 +240,14 @@ canvas#petalos{position:fixed;inset:0;width:100%;height:100%;pointer-events:none
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
       Ver ubicación
     </a>
-    <a class="btn sec" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cumple%20de%20Karlita%20%F0%9F%8C%BA&dates=20261018T010000Z/20261018T050000Z&details=Fiesta%20tropical%20por%20los%2032%20de%20Karlita.%20Dress%20code%3A%20outfit%20tropical.&location=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3D-0.964968%252C-80.758327">
+    <a class="btn sec" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Karaoke%20de%20Karlita%20%F0%9F%8E%A4&dates=20261018T010000Z/20261018T050000Z&details=Karaoke%20tropical%20por%20los%2032%20de%20Karlita.%20Dress%20code%3A%20outfit%20tropical.&location=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3D-0.964968%252C-80.758327">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
       Agregar al calendario
     </a>
   </div>
 
-  <button class="festejar" id="festejar" type="button">🌺 Toca aquí para festejar</button>
-  <p class="cierre">Tú pon la buena vibra,<br>nosotros ponemos el resto</p>
+  <button class="festejar" id="festejar" type="button">🎤 Toca aquí para festejar</button>
+  <p class="cierre">Tú pon la voz,<br>nosotros ponemos el resto</p>
 </main>
 
 <script>
